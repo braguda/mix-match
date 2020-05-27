@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "ATLA";
+    src: url("assests/fonts/ATLA.ttf");
+}
+
+@font-face {
+    font-family: "Chalk";
+    src: url("assests/fonts/chalk.ttf");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(rgb(124, 219, 137), rgb(47, 75, 47))
+}
+
+.title {
+    color: rgb(250, 199, 59);
+    font-family: ATLA, serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 6em;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    margin: 50px;
+    justify-content: center;
+}
+
+.gameInfoContainer{
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gameInfo {
+    font-family: Chalk, serif;
+    color: rgb(253, 255, 157);
+    font-size: 4em;
+    
+}
+
+.card{
+    position: relative;
+    background-color: rgb(247, 222, 226);
+    border-radius: 12px;
+    height: 200px;
+    width: 150px;
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.card-front{
+    transform: rotateX(180deg);
+}
+
+.card-back{
+    background-color: rgb(218, 191, 72);
+    border-color: rgb(200, 212, 33);
+}
+
+.cherry {
+    position: absolute;
+    width: 137px;
+    height: 267px;
+    bottom: 0;
+    right: 0;
+    transform: rotate(170deg);
+    transition: width 100ms ease-in-out, height 100ms ease-in-out
+}
+
+.card-back:hover .cherry{
+    width: 149px;
+    height: 279px;
+}
+
+/* .card-back:hover {
+    border-width: 6px;
+} */
+.earth {
+    z-index: 1;
+    height: 145px;
+    width: 135px;
+    align-self: flex-start;
+    transform: translateY(30px);
+}
+
+/* .card-back:hover .earth{
+    transform: translateY(20px);
+} */
