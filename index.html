@@ -9,16 +9,31 @@
 </head>
 <body>
     <h1 class="title">Mix-Match</h1>
+    <div class="overlay-text visible">
+        Click to Start
+    </div>
+    <div id="game-over-text" class="overlay-text">
+        DEFEAT
+        <span class="overlay-text-small">
+            Click to restart
+        </span>
+    </div>
+    <div id="victoruy-text" class="overlay-text">
+        VICTORY!
+        <span class="overlay-text-small">
+            Click to restart
+        </span>
+    </div>
     <div class="container">
         <div class="gameInfoContainer">
             <div class="gameInfo">
-                Time <span id="timeRemaining">100</span>
+                Timer: <span id="timeRemaining">100</span>
             </div>
             <div class="gameInfo">
-                Flips <span id="flips">0</span>
+                Flips: <span id="flips">0</span>
             </div>
         </div>
-        <div class="card ">
+        <div class="card">
             <div class="card-back card-face">
                 <img class="cherry cherry-top-left" src="assests/images/cherry_blossom.png">
                 <img class="earth" src="assests/images/earth-kingdom2.png">
