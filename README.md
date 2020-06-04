@@ -1,2 +1,2 @@
 # mix-match
-HTML CSS jQuery card game
+HTML CSS JavaScript card game
