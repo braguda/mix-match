@@ -78,6 +78,7 @@ body {
 .card{
     position: relative;
     background-color: rgb(247, 222, 226);
+    background-image: url("assests/images/BaSingSe.jpg");
     border-radius: 12px;
     height: 200px;
     width: 150px;
